@@ -1,0 +1,13 @@
+#this plugin is made by maxxie114
+
+name: ExamplePlugin
+main: examplePlugin.ExamplePlugin
+
+version: "3.0.0"
+api: ["1.0.7"]
+author: maxxie114
+
+commands:
+  example:
+    description: run example plugin command
+    usage: "/example"
