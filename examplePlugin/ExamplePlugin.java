@@ -41,25 +41,22 @@ public class ExamplePlugin extends PluginBase {
 
   @Override
   public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-    // String name = command.getName();
-    if (command.getName().equalsIgnoreCase("example")) {
-      String message = msg;
-      sender.sendMessage(TextFormat.BLUE + message);
-      int num = number;
-      sender.sendMessage(TextFormat.GREEN + Integer.toString(num));
-      return true;
-    } else if (command.getName().equalsIgnoreCase("getnum")) {
-      int num = number;
-      sender.sendMessage(TextFormat.GREEN + Integer.toString(num));
-      return true;
-    } else {
-      sender.sendMessage(TextFormat.RED + "Command doesn't exist.");
+    String name = command.getName().toLowerCase();
+    switch (name) {
+      case "getText":
+        String message = msg;
+        sender.sendMessage(TextFormat.BLUE + message);
+        break;
+      case "getNum": // Don't forget to specify in plugin.yml XD
+        int num = number;
+        sender.sendMessage(TextFormat.GREEN + Integer.toString(num));
+        break;
     }
-    return false;
+    return true;
   }
 
   /** For eclipse compiler */
   public static void main(String[] Args) {
-    System.out.println("Compiled!");
+    System.out.println("Compiled!!!!");
   }
 }

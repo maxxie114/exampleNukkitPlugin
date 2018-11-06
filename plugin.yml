@@ -8,6 +8,9 @@ api: ["1.0.7"]
 author: maxxie114
 
 commands:
-  example:
-    description: run example plugin command
-    usage: "/example"
+  getText:
+    description: "run example plugin command"
+    usage: "/getText"
+  getNum:
+    description: "run example plugin command"
+    usage: "/getNum"
