@@ -43,11 +43,11 @@ public class ExamplePlugin extends PluginBase {
   public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
     String name = command.getName().toLowerCase();
     switch (name) {
-      case "getText":
+      case "gettext":
         String message = msg;
         sender.sendMessage(TextFormat.BLUE + message);
         break;
-      case "getNum": // Don't forget to specify in plugin.yml XD
+      case "getnum": // Don't forget to specify in plugin.yml XD
         int num = number;
         sender.sendMessage(TextFormat.GREEN + Integer.toString(num));
         break;
@@ -57,6 +57,6 @@ public class ExamplePlugin extends PluginBase {
 
   /** For eclipse compiler */
   public static void main(String[] Args) {
-    System.out.println("Compiled!!!!");
+    System.out.println("Compiled!");
   }
 }
