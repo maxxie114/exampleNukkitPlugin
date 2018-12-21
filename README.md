@@ -1,2 +1,2 @@
 # exampleNukkitPlugin
-Just for a reference on the API, and a test plugin for nukkit;wtf
+Just for a reference on the API, and a test plugin for nukkit......
