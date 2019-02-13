@@ -8,8 +8,6 @@ import cn.nukkit.utils.TextFormat;
 
 public class EventListener implements Listener {
 
-  public EventListener(ExamplePlugin plugin) {}
-
   @EventHandler
   public void onJoin(PlayerJoinEvent event) {
     event.getPlayer().sendChat(TextFormat.GREEN + "Welcome to the server!");
